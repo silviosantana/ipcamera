@@ -6,7 +6,15 @@
 <body>
 
 <h1>IP CAMERA</h1>
-<p>Testing page</p>
 
+<div id="cctv-container">
+  <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab" id="vlc" events="True" width="640" height="480">
+    <param name="Src" value="rtsp://192.168.1.8:8554/video"/>
+    <param name="ShowDisplay" value="True"/>
+    <param name="AutoLoop" value="False"/>
+    <param name="AutoPlay" value="True"/>
+    <embed id="vlcEmb" type="application/x-google-vlc-plugin" version="VideoLAN.VLCPlugin.2" autoplay="yes" loop="no" target="rtsp://192.168.1.8:8554/video" width="640" height="480"/>
+  </object>
+</div> 
 </body>
 </html>
